@@ -12,17 +12,20 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Random random = new Random();
-            int randomNumber = random.Next(1, 21);
+            int randomNumber = random.Next(1, 31);
             int userInput;
-          
+            int attempts = 0;
+            attempts++;
+
             do
             {
-                Console.WriteLine("This is a number guessing game.\nEnter a number from 1-20:");
+                Console.WriteLine("This is a number guessing game.\nEnter a number from 1-30:");
                 userInput = Convert.ToInt32(Console.ReadLine());
 
                 if (userInput == randomNumber)
                 {
-                    Console.WriteLine("You guessed it right!");
+                    Console.WriteLine("🎉 Correct! You win!");
+                    Console.WriteLine($"It took you {attempts} tries.");
                 }
                 else if (userInput < randomNumber)
                 {
@@ -33,6 +36,7 @@ namespace ConsoleApp1
                     Console.WriteLine("Too high! Try again.");
                 }
             }
+
             while (userInput != randomNumber);
             
         }
