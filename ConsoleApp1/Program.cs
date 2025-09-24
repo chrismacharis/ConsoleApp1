@@ -15,12 +15,13 @@ namespace ConsoleApp1
             int randomNumber = random.Next(1, 31);
             int userInput;
             int attempts = 0;
-            attempts++;
 
             do
             {
-                Console.WriteLine("This is a number guessing game.\nEnter a number from 1-30:");
+                Console.WriteLine("This is a number guessing game." +
+                                  "\nEnter a number from 1-30:\n");
                 userInput = Convert.ToInt32(Console.ReadLine());
+                attempts++;
 
                 if (userInput == randomNumber)
                 {
