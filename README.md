@@ -1,0 +1,1 @@
+A simple C# console application where the program randomly selects a number between 1 and 20, and the user tries to guess it. The app provides hints like “Too high” or “Too low” until the correct number is guessed.
