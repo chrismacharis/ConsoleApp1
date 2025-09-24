@@ -19,7 +19,7 @@ namespace ConsoleApp1
             do
             {
                 Console.WriteLine("This is a number guessing game." +
-                                  "\nEnter a number from 1-30:\n");
+                                  "\nEnter a number from 1-30:");
                 userInput = Convert.ToInt32(Console.ReadLine());
                 attempts++;
 
@@ -30,11 +30,11 @@ namespace ConsoleApp1
                 }
                 else if (userInput < randomNumber)
                 {
-                    Console.WriteLine("Too low! Try again.");
+                    Console.WriteLine("Too low! Try again.\n");
                 }
                 else
                 {
-                    Console.WriteLine("Too high! Try again.");
+                    Console.WriteLine("Too high! Try again.\n");
                 }
             }
 
