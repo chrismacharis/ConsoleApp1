@@ -25,7 +25,7 @@ namespace ConsoleApp1
 
                 if (userInput == randomNumber)
                 {
-                    Console.WriteLine("🎉 Correct! You win!");
+                    Console.WriteLine("Correct! You win!");
                     Console.WriteLine($"It took you {attempts} tries.");
                 }
                 else if (userInput < randomNumber)
